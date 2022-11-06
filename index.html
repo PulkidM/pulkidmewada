@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/7d3bd8afc2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a protfolio website made by Pulkid Mewada"> 
+    <meta name="author" content="Pulkid Me">
+    <title>Pulkid Mewada</title>
+
+    <style>
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    /*--------------Navigation---------------*/
+        nav {
+            background-color: black;
+            padding-left: 30px;
+            display: inline-block;
+            position: fixed;
+            width: 100%;
+        }
+        
+        ul,
+        li,
+        a {
+            text-decoration: none;
+            color: lightgrey;
+            list-style: none;
+            display: inline-block;
+            font-size: 20px;
+            text-align: right;
+        }
+        
+        .nav_logo {
+            padding-left: 30px;
+        }
+        
+        a:hover {
+            color: WHITE;
+            transition: 0.3s;
+        }
+        
+        .nav_op {
+            padding-left: 30px;
+        }
+        
+        h1 {
+            font-family: "Work Sans", sans-serif;
+            font-size: 70px;
+            width: 5em;
+            padding-left: 30px;
+            line-height: 0.9em;
+            margin-left: 30px;
+            margin-top: 750px;
+            margin-right: auto;
+        }
+        /*----------------------------Gradient effect in PULKID MEWADA--------------------------*/
+        
+        .rainbow-text {
+            font-weight: 700;
+            background: #CA4246;
+            background-color: #CA4246;
+            background: conic-gradient( #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+            background-size: 57%;
+            background-repeat: repeat;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-text-animation-rev 0.5s ease forwards;
+            cursor: pointer;
+        }
+        
+        .rainbow-text:hover {
+            animation: rainbow-text-animation 0.9s ease forwards;
+        }
+        
+        @keyframes rainbow-text-animation {
+            0% {
+                background-size: 57%;
+                background-position: 0 0;
+            }
+            20% {
+                background-size: 57%;
+                background-position: 0 1em;
+            }
+            100% {
+                background-size: 300%;
+                background-position: -9em 1em;
+            }
+        }
+        
+        @keyframes rainbow-text-animation-rev {
+            0% {
+                background-size: 300%;
+                background-position: -9em 1em;
+            }
+            20% {
+                background-size: 57%;
+                background-position: 0 1em;
+            }
+            100% {
+                background-size: 57%;
+                background-position: 0 0;
+            }
+        }
+        /*------------------------------Typing effect--------------------------------*/
+        
+        .wrapper {
+            display: block;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(assets/images/bg_1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed !important;
+            background-size: 100% !important;
+            background-position: center top !important;
+            color: #fff;
+        }
+        
+        .typed-out {
+            margin-left: 0px;
+            overflow: hidden;
+            border-right: .15em solid black;
+            WHITE-space: nowrap;
+            width: 0;
+            animation: typing 2s steps(52, end) forwards, .2s infinite;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+        /*--------------------------About Section---------------------------*/
+        .about {
+            background-color: WHITE;
+            color: black;
+            padding: 30px;
+        }
+        
+        h2 {
+            padding: 30px;
+            font-size: 50px;
+            font-weight: 300;
+        }
+        
+        .about_para {
+            padding: 35px;
+            font-size: 20px;
+        }
+        
+        button {
+            margin: 35px;
+            padding: 35px;
+        }
+         /*--------------------------readmore button---------------------------*/
+        .read_more {
+            margin-bottom: 20px;
+            padding: 15px;
+            color: black;
+            background-color: WHITE;
+            border: 2px solid black;
+            animation: rainbow-text-animation-rev 0.5s ease forwards;
+            cursor: pointer;
+        }
+        
+        .read_more:hover {
+            background: #CA4246;
+            background-color: #CA4246;
+            background: conic-gradient( #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+            animation: rainbow-text-animation 0.9s ease forwards;
+        }
+
+
+         /*--------------------------Projects Section---------------------------*/
+        .projects {
+            display: block;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(assets/images/bg_1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed !important;
+            background-size: 100% !important;
+            background-position: center top !important;
+            color: #fff;
+            margin-top: 100px;
+            padding: 30px;
+        }
+
+        .about_pro_img {
+         width: 300px;
+         height: 300px;
+       
+         background-color: #000;
+         
+         border-radius: 50%;
+         shape-outside: circle(50%);
+        }
+
+
+
+.experience{
+    font-size: 50px;
+    display: block;
+    margin-left: 30px;
+    
+}
+
+
+
+ /*--------------------------WOrk Experience Section---------------------------*/
+table, th, td {
+ margin-left: 30px;
+    border: 0px solid;
+    font-size: 40px;
+    border-left: 1px solid white;
+    border-collapse: collapse;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+
+ /*--------------------------Project grids---------------------------*/
+.grid-container {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: auto auto auto auto;
+  background-color: #fff;
+  margin-left: 0px;
+ 
+  padding: 35px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin-left: 30px;
+ padding: 20px; 
+ width: 350px;
+height: 350px;
+ font-size: 30px;
+  text-align: center;
+}
+.project_see{
+  
+    margin-left: 60px;
+            padding: 15px;
+            color: black;
+            background-color: WHITE;
+            border: 2px solid black;
+            animation: rainbow-text-animation-rev 0.5s ease forwards;
+            cursor: pointer;
+        }
+
+.project_see:hover{
+    background: #CA4246;
+            background-color: #CA4246;
+            background: conic-gradient( #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+            animation: rainbow-text-animation 0.9s ease forwards;
+}
+
+ /*--------------------------Footer icons---------------------------*/
+i{
+    padding: 20px;
+    font-size: 30px;
+}
+
+i:hover{
+    color: gray;
+    transition: 0.2s;
+
+}
+ /*--------------------------go to top button---------------------------*/
+.go_top{
+
+            padding: 15px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            animation: rainbow-text-animation-rev 0.5s ease forwards;
+            cursor: pointer;
+}
+
+.go_top:hover{
+    background: #CA4246;
+            background-color: #CA4246;
+            background: conic-gradient( #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+            animation: rainbow-text-animation 0.9s ease forwards;
+}
+
+ /*--------------------------End of css---------------------------*/
+    </style>
+
+</head>
+
+<body>
+
+    
+
+<!-----------------------THIS IS NAVIGATION MENU---------------------->  
+    <nav>
+        <li class="nav_logo">Pulkid Mewada</li>
+        <ul class="nav">
+            <li class="nav_op"><a href="#">About</a></li>
+            <li class="nav_op"><a href="#">Projects</a></li>
+            <li class="nav_op"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+<!-----------------------TYPING TEXT---------------------->
+    <div class="wrapper">
+        <div id="typed_out" class="typed-out">
+            <h1>Hi, I am <span class="rainbow-text">PULKID MEWADA.</span> Nice to meet you. :)</h1>
+        </div>
+        <br><br><br><br><br><br><br> 
+    </div><br>  
+    <hr align="right" style="margin-top: 100px;" width="40%" color="black" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+
+
+
+<!-----------------------About Section---------------------->
+    <div class="about" id="about_me">
+        <h2 class="aboutme" align="center">ABOUT ME<hr align="center" width="11%" color="BLACK" width="2px">
+            <div class="circle" >
+                <br>
+                <a class="about_pro_img" href="assets/images/profile.jpeg">
+                    <img src="assets/images/profile.jpeg" style=" border-radius: 50%; shape-outside: circle(50%); float: center;width: 300px; height: 300px;">
+                </a>
+            </div>
+        </h2><!-----------------------HORIZONTAL LINE---------------------->
+        
+        <p class="about_para">          
+            Hey, I am Pulkid Mewada. I do Design and Development from India. I have mastered HTML, CSS and Javascript. I like to do Front-End Development
+        </p>
+        <button type="button" class="read_more">Read More</button>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <hr align="left" width="40%" color="black" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+    <br><br>
+
+
+
+<!-----------------------This is code of Work expericence section---------------------->
+
+    <div class="projects" >
+        <h2 align="center">WORK EXPERIENCE
+            <hr align="center" width="20%" color="white" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+        </h2>       
+                    <table>
+                        <tr>
+                            <td><b>Year: 2018<hr align="center" width="60%" color="white" width="2px"></b></td>
+                            <td align="right"style="padding: 10px;">Passed 10th with 53%</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="right"style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Year: 2020<hr align="center" width="60%" color="white" width="2px"></b></td>
+                            <td align="right"style="padding: 10px;">Passed 12th with 63%</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="right"style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Year: 2022<hr align="center" width="60%" color="white" width="2px"></b></td>
+                            <td align="right" style="padding: 10px;">Completed 1st year with 6.97 CGPA</td>
+                        </tr>
+                    </TABLE>
+
+    </div>
+    <hr align="right" style="margin-top: 100px;" width="40%" color="black" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+
+
+
+   <!-----------------------Projects section---------------------->
+    <div class="socials" id="social">
+        <br><br>
+
+        <h2 class="aboutme" align="center">PROJECTS
+            <hr align="center" width="12%" color="black" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+        </h2>
+
+        <div class="grid-container" align="center">
+            <div class="grid-item"><img  src="assets/images/profile.jpeg" style=" width: 300px; height: 300px;"><br>This is Project 1</div>
+            <div class="grid-item"><img  src="assets/images/profile.jpeg" style=" width: 300px; height: 300px;"><br>This is Project 1</div>
+            <div class="grid-item"><img  src="assets/images/profile.jpeg" style=" width: 300px; height: 300px;"><br>This is Project 1</div>  
+            <div class="grid-item"><img  src="assets/images/profile.jpeg" style=" width: 300px; height: 300px;"><br>This is Project 1</div>  
+        </div>
+        <br><br><br>
+        <button type="button" class="project_see">See More</button>      
+    </div>
+    <br><br><br><br>
+    <hr align="left" width="40%" color="black" width="2px"><br> <br><!-----------------------HORIZONTAL LINE---------------------->
+
+    
+   <!-----------------------Get in touch---------------------->
+    <div class="projects" >
+        <h2 align="center">GET IN TOUCH
+            <hr align="center" width="15%" color="white" width="2px"><!-----------------------HORIZONTAL LINE---------------------->
+        </h2>
+
+
+        <div class="footer" align="center">
+            <a href="#" class="footer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="footer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer"><i class="fa-solid fa-phone"></i></a>
+            <a href="#" class="footer"><i class="fa-regular fa-envelope"></i></a>       
+
+            <p style="padding-top: 30px;">
+                <a style="padding: 10px;" href="">About</a>
+                <a style="padding: 10px;"href="">Projects</a>
+                <a style="padding: 10px;" href="">Contact</a>
+                <br>
+                <button class="go_top" onclick="gotop()" id="myBtn" title="Go to top">Back to Top ▲</button>
+
+<!-----------------------Javascript for Go to top button---------------------->
+                    <script>
+                    
+                     let mybutton = document.getElementById("myBtn");
+                     window.onscroll = function() {scrollFunction()};
+                    
+                     function gotop() {
+                       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                         mybutton.style.display = "block";
+                       } else {
+                         mybutton.style.display = "none";
+                       }
+                     }
+                         function gotop() {
+                       document.body.scrollTop = 0;
+                       document.documentElement.scrollTop = 0;
+                     }
+
+
+
+
+//Fade effect
+
+var header = document.getElementById('typed_out');
+
+function fadeOutOnScroll(element) {
+	if (!element) {
+		return;
+	}
+	
+	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+	var elementHeight = element.offsetHeight;
+	var scrollTop = document.documentElement.scrollTop;
+	
+	var opacity = 0.9;
+	
+	if (scrollTop > distanceToTop) {
+		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+	}
+	
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+	}
+}
+
+function scrollHandler() {
+	fadeOutOnScroll(typed_out);
+}
+
+window.addEventListener('scroll', scrollHandler);
+                     </script><!-----------------------End of java script---------------------->
+    
+            </p>
+            <p>Made by PULKID MEWADA</p>
+        </div>               
+
+
+    </div>
+
+   <!-----------------------END OF CODE---------------------->
+</body>
+
+</html>
